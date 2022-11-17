@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(253, 246, 237);
+  padding: 8rem 1rem;
+}
+
+section {
+  margin: 0 auto;
+  width: 100%;
+  border: 3px solid rgba(4, 78, 4, 0.971);
+  padding: 3rem 1.5rem;
+}
