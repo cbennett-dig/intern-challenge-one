@@ -21,67 +21,96 @@ body {
 }
 
 .main__container{
-  background-color: rgb(99, 237, 170);
+  display: grid;
+  padding-bottom: 400px;
+  background-color: rgba(0,255,173,255);
   height: 380px;
   margin: 0 auto;
 }
 
 .main__container p {
+  color:#252525;
   text-align: center;
   padding-top: 20px;
   font-size: 1.5rem;
 }
 
 .main__container h1 {
+  color: #252525;
   text-align: center;
   padding-top: 30px;
   font-size: 3rem;
 }
 
 .main__container h3 {
+  color: #252525;
   text-align: center;
   padding-top: 40px;
   font-size: 1rem;
 }
 
-/* mobile responsive*/
-@media screen and (max-width: 768px) {
-  .main {
-    display: auto;
+/* mobile responsive */
+@media screen and (max-width: 500px){
+  .main__container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding-bottom: 200px;
+    height:auto;
   }
-  .main__container{
-    display: auto;
+
+  .main__container p {
+    padding-top: 23px;
+    font-size: 1rem;
   }
-  
+
+  .main__container h1 {
+    font-size: 1.5rem;
+  }
+
+  .main__container h3 {
+    font-size: .8rem;
+  }
+
 }
 
 /* Box Overlay Section */
 
 .items__container {
-  display:inline-flex;
+  display:grid;
   width: 100%;
 }
 
 .box_one{
-  background-color:rgb(208, 76, 157);
-  height: 275px;
-  width: 275px;
+  background-color:rgba(193,0,131,255);
+  height: 35%;
+  width: 20%;
   border-radius: 20px;
-  position: absolute;
+  position:absolute;
   top: 450px;
-  left: 100px;
+  left: 100px;    
+}
+.box_one h1 {
+  text-align: right;
+  z-index: 0;
+  position: relative;
+  font-size: 350%;
+  color: aliceblue;
+  opacity: .2;
 }
 
 .box_one h2 {
+  position: absolute;
+  z-index: 1;
   text-align: center;
-  padding-top: 20px;
+  padding-top: -10px;
   font-size:xx-large;
   color: aliceblue;
 }
 
 .box_one p {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-left: 15px;
   padding-right: 15px;
   font-size: small;
@@ -91,32 +120,45 @@ body {
 .box_one button {
   margin: 0 auto;
   display: block;
-  margin-top: 70px;
+  margin-top: 50px;
   width: 13rem;
   height: 2rem;
   background-color: aliceblue;
-  color: rgb(208, 76, 157);
+  color: rgba(193,0,131,255);
   border-radius: 7px;
 }
 .box_one button:hover {
-  background-color: rgb(208, 76, 157);
+  background-color:rgba(193,0,131,255);
   color: aliceblue;
   width: 70%;
 }
 
 .box_two{
-  background-color: rgb(208, 76, 157);
-  height: 275px;
-  width: 275px;
+  background-color: rgba(193,0,131,255);
+  height: 35%;
+  width: 20%;
   border-radius: 20px;
   position: absolute;
   top: 450px;
-  left: 425px;
+  left: 420px;
 }
 
+.box_two h1 {
+  text-align: right;
+  z-index: 0;
+  position: relative;
+  font-size: 350%;
+  color: aliceblue;
+  opacity: .2;
+}
+
+
 .box_two h2 {
+  z-index: 1;
+  position: absolute;
+  padding-left: 65px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: -10px;
   font-size: xx-large;
   color: aliceblue;
 }
@@ -131,18 +173,31 @@ body {
 }
 
 .box_three{
-background-color: rgb(208, 76, 157);
-height: 275px;
-width: 275px;
+background-color: rgba(193,0,131,255);
+height: 35%;
+width: 20%;
 border-radius: 20px;
 position: absolute;
 top: 450px;
-right: 425px;
+right: 420px;
 }
 
+.box_three h1 {
+  text-align: right;
+  z-index: 0;
+  position: relative;
+  font-size: 350%;
+  color: aliceblue;
+  opacity: .2;
+}
+
+
 .box_three h2 {
+  z-index: 1;
+  position: absolute;
   text-align: center;
-  padding-top: 20px;
+  left: 65px;
+  padding-top: -10px;
   font-size: xx-large;
   color: aliceblue;
 }
@@ -159,33 +214,46 @@ right: 425px;
 .box_three button {
   margin: 0 auto;
   display: block;
-  margin-top: 70px;
+  margin-top: 50px;
   width: 13rem;
   height: 2rem;
   background-color: aliceblue;
-  color: rgb(208, 76, 157);
+  color:rgba(193,0,131,255);
   border-radius: 7px;
 }
 
 .box_three button:hover {
-  background-color: rgb(208, 76, 157);
+  background-color: rgba(193,0,131,255);
   color: aliceblue;
   width: 70%;
 }
 
 .box_four{
-  background-color: rgb(208, 76, 157);
-  height: 275px;
-  width: 275px;
+  background-color: rgba(193,0,131,255);
+  height: 35%;
+  width: 20%;
   border-radius: 20px;
   position:absolute;
   top: 450px;
   right: 100px;
 }
 
+.box_four h1 {
+  text-align: right;
+  z-index: 0;
+  position: relative;
+  font-size: 350%;
+  color: aliceblue;
+  opacity: .2;
+}
+
+
 .box_four h2 {
+  z-index: 1;
+  position: absolute;
   text-align: center;
-  padding-top: 20px;
+  left: 65px;
+  padding-top: -10px;
   font-size: xx-large;
   color: aliceblue;
 }
@@ -199,14 +267,136 @@ right: 425px;
   color: aliceblue;
 }
 
-/* Mobile responsive*/
-@media screen and (max-width: 768px) {
-  .items__container{
-    display: auto;
-    align-items: center;
+/* Mobile responsive */
+
+@media screen and (max-width: 500px){
+  .items__container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .box_one{
+    position: absolute;
+    height: 15%;
+    width:70%;
+    left: 70px;
+    top: 400px;   
   }
 
-  .items
+  .box_one h1 {
+  font-size: 200%;
+  padding-right: 20px;
+  }
 
-  
+.box_one h2{
+  text-align: center;
+  justify-content: center;
+  padding-left: 55px;
+  top: 10px;
+  font-size:large;
 }
+
+.box_one p {
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 80px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.box_one button{
+  margin-top: 50px;
+  width: 21rem;
+  height: 2rem;
+}
+
+.box_two{
+  height: 15%;
+  width: 70%;
+  position:absolute;
+  top: 570px;
+  left: 70px;
+    
+}
+
+  .box_two h1 {
+    font-size: 200%;
+    padding-right: 20px;
+    }
+
+  .box_two h2{
+    text-align: center;
+    top: 10px;
+    font-size:large;
+  }
+
+  .box_two p {
+    font-size: small;
+    text-align: center;
+    padding-top: 2px;
+
+  }
+
+  .box_three{
+    height: 15%;
+    width:70%;
+    position: absolute;
+    top: 700px;   
+    left: 70px;
+  }
+
+  .box_three h1 {
+    font-size: 200%;
+    padding-right: 20px;
+    }
+
+  .box_three h2{
+    text-align: center;
+    justify-content: center;
+    top: 10px;
+    font-size:large;
+  }
+
+  .box_three p {
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 80px;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+
+  .box_three button{
+    margin-top: 40px;
+    width: 21rem;
+    height: 2rem;
+  }
+
+
+  .box_four{
+    position: absolute;
+    height: 15%;
+    width:70%;
+    justify-content: center;
+    top: 870px;   
+    left: 70px;
+  }
+
+  .box_four h1 {
+    font-size: 200%;
+    padding-right: 20px;
+    }
+
+  .box_four h2{
+    padding-left: 90px;
+    top: 10px;
+    font-size:large;
+  }
+
+  .box_four p {
+    padding-top: 10px;
+    padding-right: 80px;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+  }
+  
+
